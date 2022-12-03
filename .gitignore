@@ -3,6 +3,9 @@
 #input files
 input*.txt
 
+#ignore files
+ignore*
+
 # dependencies
 /node_modules
 /.pnp
