@@ -1,7 +1,7 @@
 console.clear()
 const input = await Deno.readTextFile('./input.txt')
 
-const inArr = input.split('\n')
+const inArr = input.split('\r\n')
 
 let totalScore = 0
 const cardValue: { [key: string]: number } = { A: 1, B: 2, C: 3 }
