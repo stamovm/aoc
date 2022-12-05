@@ -1,6 +1,6 @@
 console.clear()
 const input = await Deno.readTextFile('./input.txt').then((input) =>
-  input.split('\n')
+  input.split('\r')
 )
 let sum = 0
 
@@ -13,7 +13,7 @@ for (let i = 0; i < input.length; i += 3) {
   for (let j = 0; j < s1.length; j++) {
     const inS2 = s2.indexOf(s1[j])
     const inS3 = s3.indexOf(s1[j])
-    if (inS2 !== -1 && inS3 !== -1 && s1[j].charCodeAt(0) !== 13) {
+    if (inS2 !== -1 && inS3 !== -1) {
       ch = s1[j]
     }
   }

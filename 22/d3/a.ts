@@ -1,6 +1,6 @@
 console.clear()
 const input = await Deno.readTextFile('./input.txt').then((input) =>
-  input.split('\n')
+  input.split('\r\n')
 )
 
 let sum = 0
